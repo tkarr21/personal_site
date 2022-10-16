@@ -1,0 +1,122 @@
+/**
+ * WHAT IS THIS FILE?
+ *
+ * Globally applied styles. No matter which components are in the page or matching route,
+ * the styles in here will be applied to the Document, without any sort of CSS scoping.
+ *
+ */
+
+:root {
+  --neutral-blue: #64a0e2;
+  --neutral-gray: #EEEEEE;
+  --neutral-lotion: #FCFCFC;
+  --neutral-champange: #e7cd9a;
+  --neutral-pink: #F7DBD7;
+
+  --blue: #0011ff;
+  --pink: #ff00cc;
+
+  --glass1: rgba(255,255,255,.4);
+  --glass2: rgba(255, 255, 255, 0.2);
+  --glass-text: rgba(255, 255, 255, 0.9);
+
+  --highlight-color: black;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+::selection {
+  background: var(--neutral-pink);
+  color: white;
+}
+
+body {
+  background-color: #fafafa;
+  background-image: linear-gradient(45deg, var(--neutral-blue), var(--neutral-champange));
+  font-family: 'Montserrat',
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  min-height: 100vh;
+  margin:0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  overflow: hidden;
+  padding:20px;
+  width: 70%;
+  height: 800px;
+  gap: 10%;
+}
+
+h1,
+h2 {
+  margin: 0 0 5px 0;
+}
+
+.glass-card {
+  color: var(--glass-text);
+  background-image: linear-gradient(190deg, var(--glass1), var(--glass2));
+  backdrop-filter: blur(100px);
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 3px 3px 10px rgba(231, 231, 231, 0.416);
+}
+
+.grow {
+  transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  padding: 15px;
+  text-align: center;
+  font-size: 1em;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+
+a.menu-item {
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a.menu-item.active {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+:visited {
+  color: var(--glass-text);
+}
+
+.route-content {
+  padding: 20px;
+  font-size: 2rem;
+}
+
+.profile-photo {
+  width: 40%;
+  box-shadow: 3px 3px 10px rgba(231, 231, 231, 0.832);
+}
