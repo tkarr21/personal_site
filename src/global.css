@@ -35,7 +35,7 @@ html {
 
 body {
   background-color: #fafafa;
-  background-image: linear-gradient(45deg, var(--neutral-blue), var(--neutral-champange));
+  
   font-family: 'Montserrat',
     ui-sans-serif,
     system-ui,
@@ -83,10 +83,15 @@ footer {
   padding: 15px;
   text-align: center;
   font-size: 1em;
+  position:absolute;
+  bottom: 4%;
+  display: flex;
+  flex-direction: column;
 }
 
 footer a {
   text-decoration: none;
+  color: var(--glass-text);
 }
 
 footer a:hover {
@@ -95,28 +100,42 @@ footer a:hover {
 
 
 
-a.menu-item {
-  font-size: 2rem;
-  padding: 10px;
-  cursor: pointer;
+a {
   text-decoration: none;
-}
-
-a.menu-item.active {
-  font-weight: bold;
-  color: rgba(0, 0, 0, 0.7);
 }
 
 :visited {
   color: var(--glass-text);
 }
 
-.route-content {
-  padding: 20px;
-  font-size: 2rem;
-}
-
 .profile-photo {
   width: 40%;
+  
+}
+
+[class*="-photo"] {
   box-shadow: 3px 3px 10px rgba(231, 231, 231, 0.832);
+}
+
+.hover-animation {
+  position: relative;
+  display: inline-block;
+}
+
+.hover-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--glass-text);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

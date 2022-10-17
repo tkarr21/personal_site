@@ -1,25 +1,24 @@
-import { component$, Slot } from '@builder.io/qwik';
+import { component$, Slot, useStylesScoped$ } from '@builder.io/qwik';
 import Header from '../components/header/header';
-import Menu from '../components/menu/menu';
+
+import styles from './routes-layout.css?inline';
+
 
 export default component$(() => {
+  useStylesScoped$(styles);
+
   return (
-    <>
-      <main>
-        
-          <Header />
-          <div style={{display: 'flex', gap: '5rem'}}>
-            <Menu />
-            <Slot />
-          </div>
-       
-      </main>
-      
-      <footer>
-        <a href="https://www.builder.io/" target="_blank">
-          Made with Qwik, by Builder.io
-        </a>
-      </footer>
-    </>
+    <div class="wrapper">
+      <Header/>
+      <Slot/>
+      <div style={{display: "flex", justifyContent: "center"}}>
+        <footer>
+          <a href="https://www.builder.io/" target="_blank">
+            Made with Qwik, by Builder.io
+          </a>
+          <p>Navigator modified from <a href="https://codepen.io/hrtzt/details/pgXMYb/">codepen</a> by <a href="www.albertohartzet.com">www.albertohartzet.com</a></p>
+          </footer>
+      </div>
+    </div>
   );
 });

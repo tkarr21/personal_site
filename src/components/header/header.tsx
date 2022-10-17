@@ -8,7 +8,7 @@ export default component$(() => {
   return (
     <header>
       <div class="name glass-card">
-        Tyler Karren | Software Engineer
+        Tyler Karren | Software Engineer | <a href="mailto:tkarren22@gmail.com"><span class="hover-animation">Email</span></a>
       </div>
     </header>
   );
