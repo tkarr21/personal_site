@@ -1,0 +1,36 @@
+
+.container {
+  display: flex;
+  padding: calc(50px + 4%);
+}
+
+.sub-container{
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text {
+  font-size: 2.2rem;
+  padding: 1rem;
+}
+
+.image-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-direction: column;
+}
+
+.wasatch-photo {
+  width: 100%;
+}
+
+.jump-photo {
+  width: 50%;
+}
+
+.tips-photo {
+  width: 50%;
+}

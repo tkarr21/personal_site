@@ -1,0 +1,34 @@
+.logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.logo-wrap {
+  height: 100px;
+  width: 100px;
+  padding: 30px;
+}
+
+/*.logo {}*/
+
+.instagram {
+  position: absolute;
+  top: 24px;
+  right: 31px;
+  left: 31px;
+}
+
+.strava {
+  position: absolute;
+  top: 12px;
+  right: 30px;
+  left: 30px;
+}
+
+.soundcloud {
+  position: absolute;
+  top: 23px;
+  right: 15px;
+  left: 15px;
+}
