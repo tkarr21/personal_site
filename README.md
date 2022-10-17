@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ffd2a838-7f8e-411f-a995-c28db2666968/deploy-status)](https://app.netlify.com/sites/jocular-capybara-9fc308/deploys)
+
 # Qwik App ⚡️
 
 - [Qwik Docs](https://qwik.builder.io/)
