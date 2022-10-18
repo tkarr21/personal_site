@@ -20,3 +20,24 @@
   font-size: 1.5rem;
   color: var(--glass-text) !important;
 }
+
+@media (max-width: 767px) {
+  .card-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: none;
+    padding: 1rem;
+  }
+
+  .header-text {
+    font-size: 1.8rem;
+  }
+  .description-text {
+    text-align: center; 
+  }
+
+
+};

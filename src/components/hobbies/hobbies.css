@@ -34,3 +34,24 @@
 .tips-photo {
   width: 50%;
 }
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px;
+  }
+  .sub-container {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  .image-container {
+    flex-direction: row;
+    justify-content: center
+  }
+
+  .text {
+    font-size: 1.8rem;
+  }
+}

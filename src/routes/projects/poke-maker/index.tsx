@@ -1,9 +1,9 @@
-import { component$, useStylesScoped$ } from '@builder.io/qwik';
+import { component$ } from '@builder.io/qwik';
 
-import styles from "./poke-maker.css?inline";
+
 
 export default component$(() => { 
-  useStylesScoped$(styles);
+
   return (
     <>
       <div class="header-text glass-card"><a class="hover-animation" href="https://poke-web-tkarr21.vercel.app" target="_blank">Poke-Maker</a></div>

@@ -9,7 +9,7 @@ export default component$(() => {
   const socials = [
     {
       cl: "logo-wrap glass-card grow",
-      icl: "logo",
+      icl: "logo github",
       re: "https://github.com/tkarr21",
       sr: "/github.svg",
       alt: "github"
@@ -23,7 +23,7 @@ export default component$(() => {
     },
     {
       cl: "logo-wrap glass-card grow",
-      icl: "logo",
+      icl: "logo linkedin",
       re: "https://www.linkedin.com/in/tyler-karren-587085a4",
       sr: "/linkedin-in.svg",
       alt: "linkedin"
@@ -37,14 +37,14 @@ export default component$(() => {
     },
     {
       cl: "logo-wrap glass-card grow",
-      icl: "logo",
+      icl: "logo spotify",
       re: "https://open.spotify.com/user/tkreator",
       sr: "/spotify.svg",
       alt: "spotify"
     }, 
     {
       cl: "logo-wrap glass-card grow",
-      icl: "logo",
+      icl: "logo email",
       re: "mailto:tkarren22@gmail.com",
       sr: "/paper-plane-solid.svg",
       alt: "email"

@@ -14,7 +14,7 @@ export default component$(() => {
       </p>
 
       <div class="screen-shot-wrap">
-        <video autoPlay loop width="450" height="450" style={{ position: "relative"}}>
+        <video controls loop width="450" height="450" style={{ position: "relative"}}>
           <source src="/tag.mov"/>
         </video>
       </div>

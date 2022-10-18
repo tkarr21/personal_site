@@ -33,6 +33,7 @@ export default component$(() => {
   ]
 
   return (
+    <>
     <div class="contenedor">
       <form>
         <input type="radio" id="Slide1" name="slider" title="About" autoFocus={true} checked={true}></input>
@@ -52,6 +53,21 @@ export default component$(() => {
           
         </div>
       </form>
-    </div>
+      </div>
+      <div class="mobile">
+        {
+          slides.map(s => {
+            if (s.id == "Slide1") return s.component;
+            return (
+              <>
+                <div class="mobile-header">{s.titulo}</div>
+                {s.component}
+              </>
+            )
+          })
+        }
+      </div>
+      
+    </>
   );
 });

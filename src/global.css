@@ -21,11 +21,19 @@
   --glass-text: rgba(255, 255, 255, 0.9);
 
   --highlight-color: black;
+
+  --mobile: 767px;
 }
 
 html {
   font-size: 62.5%;
   box-sizing: border-box;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 ::selection {
@@ -102,6 +110,7 @@ footer a:hover {
 
 a {
   text-decoration: none;
+  color: var(--glass-text);
 }
 
 :visited {
@@ -175,4 +184,26 @@ a {
 
 .contenedor form input:hover::after:not(label) {
   opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .contenedor form input::after {
+    font-size: 1.8rem;
+    left: 0;
+    bottom: 22px;
+    
+  }
+
+  .profile-photo {
+    width: 50%;
+  }
+
+  footer {
+    display: none;
+  }
+
+  body {
+    background-image: linear-gradient(45deg, var(--neutral-blue), var(--neutral-champange));
+  }
+  
 }
