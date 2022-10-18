@@ -10,7 +10,7 @@ export default component$(() => {
     <div class="wrapper">
       <div class="header">
         <div class="glass-card grow arrow-wrap">
-          <a href="/#Slide2">
+          <a href="/">
             <img src="/arrow-left-solid.svg" class="back-arrow" alt="back button" />
           </a>
         </div>
