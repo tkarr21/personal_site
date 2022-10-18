@@ -35,12 +35,12 @@ export default component$(() => {
   return (
     <div class="contenedor">
       <form>
-        <input type="radio" id="Slide1" name="slider" title="About" autoFocus={true} checked={true}/>
+        <input type="radio" id="Slide1" name="slider" title="About" autoFocus={true} checked={true}></input>
         {
           slides.map(s => {
           if (s.id == "Slide1") return;
           return (
-            <input type="radio" id={s.id} name="slider" title={s.titulo}/>
+            <input type="radio" id={s.id} name="slider" title={s.titulo}></input>
           );
           })
         }

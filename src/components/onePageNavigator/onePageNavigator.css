@@ -28,42 +28,6 @@
   border: 0;
 }
 
-.contenedor form input::before {
-  content: "";
-  position: absolute;
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  border: 2px solid rgba(255, 255, 255, 0.81);
-  border-radius: 11px;
-  cursor: pointer;
-  transition: all 0.25s linear;
-}
-
-.contenedor form input:checked::before {
-  background-color: white;
-}
-
-.contenedor form input::after {
-  content: "" attr(title) "";
-  position: relative;
-  left: 30px;
-  opacity: 0;
-  color: white;
-  font-size: 2rem;
-  display: block;
-  min-width: 80px;
-  transition: all 0.25s linear;
-  cursor: pointer;
-}
-
-.contenedor form input:checked::after {
-  opacity: 1;
-}
-
-.contenedor form input:hover::after:not(label) {
-  opacity: 1;
-}
 
 .contenedor form input:nth-of-type(1):checked~.labels label {
   transform: translateY(-0%);
