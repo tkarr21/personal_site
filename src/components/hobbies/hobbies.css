@@ -1,7 +1,7 @@
 
 .container {
   display: flex;
-  padding: calc(50px + 4%);
+  padding: calc(40px + 7%);
 }
 
 .sub-container{
