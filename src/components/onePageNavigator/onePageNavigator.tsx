@@ -48,7 +48,7 @@ export default component$(() => {
         <div class="labels">
 
           {slides.map((s) => {
-            return <label class="Slide" for={s.id} id={s.id}><div class="content">{s.component}</div></label>
+            return <label class="Slide" for={s.id} id={`${s.id}-label`}><div class="content">{s.component}</div></label>
           })}
           
         </div>

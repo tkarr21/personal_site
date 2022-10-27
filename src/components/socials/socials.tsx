@@ -64,7 +64,7 @@ export default component$(() => {
         return (
           <div class={s.cl}>
             <a href={s.re} target="_blank">
-              <img class={s.icl} src={s.sr} alt={s.alt} />
+              <img class={s.icl} src={s.sr} alt={s.alt} loading="lazy"/>
             </a>
           </div>
         );
