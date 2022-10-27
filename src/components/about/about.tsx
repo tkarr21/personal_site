@@ -19,7 +19,7 @@ export default component$(() => {
         enjoy exploring all the cool things tech has to offer and through it all I always find
         myslef coming back to Web development.
       </div>
-      <img class="profile-photo" src='/profile_photo.jpg'/>
+      <img class="profile-photo" src='/profile_photo.jpg' loading="lazy"/>
     </div>
   );
 });

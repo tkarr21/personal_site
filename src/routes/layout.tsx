@@ -13,9 +13,10 @@ export default component$(() => {
       <Slot/>
       <div style={{display: "flex", justifyContent: "center"}}>
         <footer>
+          <a href="https://github.com/tkarr21/personal_site">source on github</a>
           <a href="https://www.builder.io/" target="_blank">
             Made with Qwik, by Builder.io
-          </a>
+          </a> 
           <p>Navigator modified from <a href="https://codepen.io/hrtzt/details/pgXMYb/">codepen</a> by <a href="www.albertohartzet.com">www.albertohartzet.com</a></p>
           </footer>
       </div>
