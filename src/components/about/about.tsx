@@ -7,7 +7,7 @@ export default component$(() => {
   return (
     <div class="about-container">
       <div class="glass-card about-text">
-        I'm a 26 year old CS Masters Student at BYU. I have 
+        I'm a 27 year old CS Masters Student at BYU. I have 
         worked on a variety of projects including a ML application
         at <a href="https://www.securitymetrics.com/">SecurityMetrics</a>,
         research in applying <a href="https://en.wikipedia.org/wiki/Variational_autoencoder">VAE model</a> in a

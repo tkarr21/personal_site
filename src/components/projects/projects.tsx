@@ -32,12 +32,12 @@ export default component$(() => {
       title: "AI tag",
       description: "Reinforcement Learning Research, VAE-agents playing tag"
     },
-    {
+    /*{
       cl: "glass-card grow",
       name: "blogs-comments",
       title: "Blogs and Comments",
       description: "Blogs and my comments"
-    }
+    }*/
   ]
 
   return (
